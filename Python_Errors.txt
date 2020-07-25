@@ -1,0 +1,118 @@
+PYTHON-ERROR TYPES 
+
+ERROR:
+	Errors are the problems in a program due to which the program will stop the execution. 
+                On the other hand, exceptions are raised when the some internal events occur which changes the normal flow of the program. 
+	Two types of Error occurs in python.
+		1.Syntax errors
+		2.Logical errors (Exceptions) 
+
+1.SYNTAX ERROR:
+
+	The most common reason of an error in a Python program is when a certain statement is not in accordance with the prescribed usage. Such an error is called a syntax error. 
+	The Python interpreter immediately reports it, usually along with the reason.
+
+	For Example,
+
+		>>> print "hello"
+		SyntaxError: Missing parentheses in call to 'print'. Did you mean print("hello")? 
+
+2.LOGICAL ERROR (EXCEPTIONS):
+
+	Many times though, a program results in an error after it is run even if it doesn't have any syntax error. Such an error is a runtime error, called an exception.
+	A number of built-in exceptions are defined in the Python library.
+
+COMMON ERROR TYPES:
+
+	Some of  the important common error types are,
+		
+		1.IndexError
+		2.KeyError
+		3.ImportError
+		4.TypeError
+		5.ValueError
+		6.NameError
+		7.ZeroDivisionError
+
+1.INDEXERROR:
+
+	IndexError is thrown when trying to access an item at an invalid index. 
+
+	EXAMPLE:
+
+			>>> L1=[1,2,3]
+ 			>>> L1[3]
+ 			Traceback (most recent call last):
+ 			File "<pyshell#18>", line 1, in <module> 
+ 			L1[3]
+ 			IndexError: list index out of range
+
+2.KEYERROR:
+
+	KeyError is thrown when a key is not found. 
+
+	EXAMPLE:
+
+			>>> D1={'1':"aa", '2':"bb", '3':"cc"}
+			>>> D1['4']
+ 			Traceback (most recent call last):
+ 			File "<pyshell#15>", line 1, in <module> 
+ 			D1['4']
+ 			KeyError: '4'  
+
+3.IMPORTERROR:
+
+	ImportError is thrown when a specified function can not be found.
+	
+	EXAMPLE:
+ 
+			>>> from math import cube
+ 			Traceback (most recent call last):
+ 			File "<pyshell#16>", line 1, in <module> 
+ 			from math import cube
+ 			ImportError: cannot import name 'cube' 
+4.TYPEERROR:
+
+	TypeError is thrown when an operation or function is applied to an object of an inappropriate type. 
+
+	EXAMPLE:
+
+			>>> '2'+2
+ 			Traceback (most recent call last):
+			File "<pyshell#23>", line 1, in <module> 
+ 			'2'+2
+ 			TypeError: must be str, not int  
+
+5.VALUEERROR:
+
+	ValueError is thrown when a function's argument is of an inappropriate type.
+
+	EXAMPLE:
+ 
+			>>> int('xyz')
+ 			Traceback (most recent call last):
+ 			File "<pyshell#14>", line 1, in <module> 
+ 			int('xyz')
+ 			ValueError: invalid literal for int() with base 10: 'xyz' 
+6.NAMEERROR:
+
+	NameError is thrown when an object could not be found. 
+	
+	EXAMPLE:
+			>>> age
+ 			Traceback (most recent call last):
+ 			File "<pyshell#6>", line 1, in <module> 
+ 			age
+ 			NameError: name 'age' is not defined 
+
+7.ZERODIVISIONERROR:
+ 
+	ZeroDivisionError is thrown when the second operator in the division is zero. 
+
+	EXAMPLE:
+
+			>>> x=100/0
+ 			Traceback (most recent call last):
+ 			File "<pyshell#8>", line 1, in <module> 
+ 			x=100/0
+ 			ZeroDivisionError: division by zero 
